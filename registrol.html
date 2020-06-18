@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Funder</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Fontawesome incons-->
+    <script src="https://kit.fontawesome.com/38871bd129.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+   <!--Navbar -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" data-smooth="home" href="index.html"><img src="assets/img/logov4.png"></a>
+</nav>
+<!--Navbar -->
+
+<!--Registro -->
+<div class="signup-form">
+    <form action="/examples/actions/confirmation.php" method="post">
+		<h2>Registro</h2>
+		<p>Por favor complete este formulario para crear una cuenta</p>
+		<hr>
+        <div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" name="username" placeholder="nombre de usuario" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group" >
+				<input type="email" class="form-control" name="email" placeholder="correo electronico" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" name="password" placeholder="contraseña" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<input type="text" class="form-control" name="confirm_password" placeholder="confirmar contraseña" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<label class="checkbox-inline"><input type="checkbox" required="required"> Acepto <a href="#">Términos de Uso</a> &amp; <a href="#">Politica de privacidad</a></label>
+        </div>
+        <div class="text-center">
+		<div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg" >Registrate</button>
+        </div>
+    </div>
+    </form>
+	<div class="text-center">¿Ya tienes una cuenta? <a href="#" id="signin">Inicia sesion</a></div>
+</div>
+<!--Registro -->
+
+<!--Modal Inicia Sesion-->
+
+<div class="bg-modal">
+	<div class="modal-contents">
+        <div class="close">+</div>
+        <div class="signup-form"></div>
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h3>Incia sesion</h3>
+            <div class="form-group">
+                <div class="input-group" >
+                    <input type="email" class="form-control" name="email" placeholder="correo electronico" required="required">
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="password" placeholder="contraseña" required="required">
+                    </div>
+                </div>
+                <p class="text-center">No recuerdo mi contraseña <a href="#"> Recordar</a></p>
+                <div class="text-center">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg" id="signin">Iniciar sesion</button>
+                    </div>
+                </div>
+                </form>           
+	</div>
+</div>
+<!--Modal section -->
+
+  <!-- Footer -->
+    
+  
+      <!-- Optional JavaScript -->
+      
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+    </body>
+  </html>
